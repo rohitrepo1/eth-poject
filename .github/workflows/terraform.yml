@@ -47,7 +47,8 @@ name: 'Terraform'
 on:
   push:
     branches:
-    - master
+    - master/eth-poject/eth-new/
+
   pull_request:
 
 permissions:
