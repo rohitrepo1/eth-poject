@@ -47,7 +47,7 @@ name: 'Terraform'
 on:
   push:
     branches:
-    - master/eth-poject/eth-new/
+    - master
 
   pull_request:
 
@@ -64,6 +64,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: ./master
 
     steps:
     # Checkout the repository to the GitHub Actions runner
