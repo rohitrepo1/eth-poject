@@ -1,3 +1,9 @@
+provider "aws" {
+  profile    = "default"
+  region     = "us-east-1"
+}
+
+
 resource "aws_iam_role" "eks_cluster" {
   name = "eks-cluster"
 
