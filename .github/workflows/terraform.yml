@@ -44,6 +44,9 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
+      env:
+        AWS Access Key ID: ${{ secrets.ACCESS_KEY }}
+        AWS Secret Access Key: ${{ secrets.SECRET_ACCESS_KEY}}
       run: terraform plan -input=false
 
       # On push to master, build or change infrastructure according to Terraform configuration files
