@@ -10,6 +10,7 @@ terraform {
 
 resource "aws_iam_role" "eks_cluster" {
   name = "eks-cluster"
+  region = "us-east-1"
 
   assume_role_policy = <<POLICY
 {
